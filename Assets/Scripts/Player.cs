@@ -9,8 +9,7 @@ public class Player : MonoBehaviour
 
 	public event EventHandler<OnSelectedCounterChangedEventArgs> OnSelectedCounterChanged;
 
-	public class OnSelectedCounterChangedEventArgs : EventArgs
-	{
+	public class OnSelectedCounterChangedEventArgs : EventArgs {
 		public ClearCounter selectedCounter;
 	}
 
@@ -28,7 +27,6 @@ public class Player : MonoBehaviour
 		{
 			Debug.LogError("There is more than one Player instance");
 		}
-
 		Instance = this;
 	}
 
@@ -41,7 +39,7 @@ public class Player : MonoBehaviour
 	{
 		if (selectedCounter != null)
 		{
-			selectedCounter.Interact(this);
+			selectedCounter.Interact();
 		}
 	}
 
@@ -68,8 +66,7 @@ public class Player : MonoBehaviour
 		}
 
 		float interactDistance = 2f;
-		if (Physics.Raycast(transform.position, lastInteractDirection, out RaycastHit raycastHit, interactDistance,
-			    countersLayerMask))
+		if (Physics.Raycast(transform.position, lastInteractDirection, out RaycastHit raycastHit, interactDistance, countersLayerMask))
 		{
 			// Debug.Log(raycastHit.transform);
 			if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
@@ -155,9 +152,8 @@ public class Player : MonoBehaviour
 	{
 		this.selectedCounter = selectedCounter;
 
-		//OnSelectedCounterChanged?.Invoke(this, new OnSelectedCounterChangedEventArgs
-		//{
-		//	selectedCounter = selectedCounter;
-		//});
+		OnSelectedCounterChanged?.Invoke(this, new OnSelectedCounterChangedEventArgs { 
+			selectedCounter = selectedCounter
+		});
 	}
 }

@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1773777584
+  lastShownTimestamp: 1773864224
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1773777584
+  checkedLastUpdateTimestamp: 1773864224
   lastQOTDResponse:
     questionId: 282
     questionText: 'If I do:
@@ -32,26 +32,26 @@ MonoBehaviour:
     answerC: 
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1773777584
+  lastQotdTimestamp: 1773864224
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleMar26Synty.png
     topText: Synty Bundle! Awesome Low Poly Sci-Fi Assets and Anims!
     topLink: humblebundle
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1773777584
+  lastDynamicHeaderTimestamp: 1773864224
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1773777584
+  websiteLatestMessageTimestamp: 1773864224
   websiteLatestVideos:
     videos:
+    - youTubeId: Ni85VfUCw6E
+      title: The STATE of VR in 2026!
     - youTubeId: xvGRjPssGnw
       title: Do NOT make this MISTAKE with your Games!
     - youTubeId: a4JpMP-pM6k
       title: TOP 10 NEW Games, Made with Unity! (FEBRUARY 2026)
     - youTubeId: 5VcshVc1a_k
       title: How To Make Diegetic 3D UI In Unity (EASY!)
-    - youTubeId: nwW5UB_gBi8
-      title: How to make a living from Indie Dev WITHOUT a Hit!
-  websiteLatestVideosTimestamp: 1773777584
+  websiteLatestVideosTimestamp: 1773864224

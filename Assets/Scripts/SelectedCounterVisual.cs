@@ -16,7 +16,21 @@ public class SelectedCounterVisual : MonoBehaviour
     {
         if (e.selectedCounter == clearCounter)
         {
-            
+            Show();
         }
+		else
+		{
+			Hide();
+		}
     }
+
+	private void Show()
+	{
+		visualGameObject.SetActive(true);
+	}
+
+	private void Hide()
+	{
+		visualGameObject.SetActive(false);
+	}
 }
