@@ -9,7 +9,6 @@ public class ClearCounter : MonoBehaviour
 	[SerializeField] private ClearCounter secondClearCounter;
 	[SerializeField] private bool testing;
 
-
 	private KitchenObject kitchenObject;
 
 	private void Update()
