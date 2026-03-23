@@ -2,27 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearCounter : MonoBehaviour, IKitchenObjectParent
+public class ClearCounter : BaseCounter, IKitchenObjectParent
 {
 	[SerializeField] private KitchenObjectSO kitchenObjectSO;
 	[SerializeField] private Transform counterTopPoint;
-	// [SerializeField] private ClearCounter secondClearCounter;
-	// [SerializeField] private bool testing;
 
 	private KitchenObject kitchenObject;
 
-	// private void Update()
-	// {
-	// 	if (testing && Input.GetKeyDown(KeyCode.T))
-	// 	{
-	// 		if (kitchenObject != null)
-	// 		{
-	// 			kitchenObject.SetKitchenObjectParent(secondClearCounter);
-	// 		}
-	// 	}
-	// }
-
-    public void Interact(Player player)
+    public override void Interact(Player player)
     {
 		if (kitchenObject == null)
 		{

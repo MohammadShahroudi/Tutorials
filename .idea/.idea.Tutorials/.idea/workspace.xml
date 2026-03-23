@@ -7,9 +7,10 @@
     <list default="true" id="49113c3e-5a55-43ea-8883-da2bdb23dd61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/ClearCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ClearCounter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/ClearCounter.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/ClearCounter.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClearCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ClearCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,6 +108,10 @@
       <workItem from="1773892641836" duration="3894000" />
       <workItem from="1773959528093" duration="11000" />
       <workItem from="1773959603529" duration="1636000" />
+      <workItem from="1774285158608" duration="69000" />
+      <workItem from="1774285266305" duration="5000" />
+      <workItem from="1774285333995" duration="36000" />
+      <workItem from="1774285378509" duration="1779000" />
     </task>
     <servers />
   </component>
