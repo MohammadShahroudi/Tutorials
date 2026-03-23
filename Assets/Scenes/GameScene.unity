@@ -1236,6 +1236,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1630607668529960545, guid: 372d8657a2d8b40fca2e278df49ac344, type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 27313c52cff344d33be237d55897a9a4, type: 2}
     - target: {fileID: 4687660484298154586, guid: 372d8657a2d8b40fca2e278df49ac344, type: 3}
       propertyPath: m_Name
       value: ClearCounter (1)
