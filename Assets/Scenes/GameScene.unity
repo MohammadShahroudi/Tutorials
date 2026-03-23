@@ -214,6 +214,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachinePipeline
+--- !u!1 &310126735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2670028886617915001, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+  m_PrefabInstance: {fileID: 759501644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +518,11 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &410579034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4068751976997409264, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+  m_PrefabInstance: {fileID: 759501644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &434325155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -529,6 +539,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 91e8fe3de9249fc44b7bdd8050062896, type: 3}
+    - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.01
+      objectReference: {fileID: 0}
     - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -578,6 +600,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+--- !u!1 &526564767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5195665962974105595, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+  m_PrefabInstance: {fileID: 759501644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &613387492
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,9 +730,49 @@ PrefabInstance:
       propertyPath: kitchenObjectSO
       value: 
       objectReference: {fileID: 11400000, guid: 27313c52cff344d33be237d55897a9a4, type: 2}
+    - target: {fileID: 5588985237119403037, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: baseCounter
+      value: 
+      objectReference: {fileID: 1701957195}
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: visualGameObjectArray.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: 'visualGameObjectArray.Array.data[0]'
+      value: 
+      objectReference: {fileID: 310126735}
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: 'visualGameObjectArray.Array.data[1]'
+      value: 
+      objectReference: {fileID: 410579034}
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: 'visualGameObjectArray.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1224070481}
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: 'visualGameObjectArray.Array.data[3]'
+      value: 
+      objectReference: {fileID: 526564767}
     - target: {fileID: 6804228117240222678, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
       propertyPath: m_Name
       value: ContainerCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 9017887382913114479, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -752,7 +819,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 32495827656437606, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
@@ -836,6 +904,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2092279005}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1224070481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5588985237119403037, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+  m_PrefabInstance: {fileID: 759501644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1306164077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1082,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 372d8657a2d8b40fca2e278df49ac344, type: 3}
+--- !u!114 &1701957195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3611057602293392724, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+  m_PrefabInstance: {fileID: 759501644}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208b6cfd7c49144d2a33bfe6762f565c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContainerCounter
 --- !u!1001 &1869794775
 PrefabInstance:
   m_ObjectHideFlags: 0
