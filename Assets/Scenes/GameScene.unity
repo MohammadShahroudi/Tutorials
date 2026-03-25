@@ -1153,6 +1153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4687660484298154586, guid: 372d8657a2d8b40fca2e278df49ac344, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4687660484298154587, guid: 372d8657a2d8b40fca2e278df49ac344, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5
