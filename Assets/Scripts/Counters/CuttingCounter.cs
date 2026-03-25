@@ -2,18 +2,14 @@ using System;
 using UnityEngine;
 using UnityEngine.Video;
 
-public class CuttingCounter : BaseCounter
+public class CuttingCounter : BaseCounter, IHasProgress
 {
     
-    public event EventHandler<OnProgressChangedEventArgs> OnProgressChanged;
-    public class OnProgressChangedEventArgs : EventArgs
-    {
-        public float progressNormalized;
-    }
+    public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
 
     public event EventHandler OnCut;
     
-    [SerializeField] private CuttingRecipeSO[] cuttingRecipeSOArray;
+    [SerializeField] private FryRecipeSO[] cuttingRecipeSOArray;
 
     private int cuttingProgress;
     
@@ -31,11 +27,11 @@ public class CuttingCounter : BaseCounter
                     player.GetKitchenObject().SetKitchenObjectParent(this);
                     cuttingProgress = 0;
                     
-                    CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO());
+                    FryRecipeSO fryRecipeSo = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO());
 
-                    OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+                    OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
                     {
-                        progressNormalized = (float) cuttingProgress / cuttingRecipeSO.cuttingProgressMax
+                        progressNormalized = (float) cuttingProgress / fryRecipeSo.cuttingProgressMax
                     });
                 }
             }
@@ -69,14 +65,14 @@ public class CuttingCounter : BaseCounter
             
             OnCut?.Invoke(this, EventArgs.Empty);
             
-            CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO());
+            FryRecipeSO fryRecipeSo = GetCuttingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO());
             
-            OnProgressChanged?.Invoke(this, new OnProgressChangedEventArgs
+            OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
             {
-                progressNormalized = (float) cuttingProgress / cuttingRecipeSO.cuttingProgressMax
+                progressNormalized = (float) cuttingProgress / fryRecipeSo.cuttingProgressMax
             });
 
-            if (cuttingProgress >= cuttingRecipeSO.cuttingProgressMax)
+            if (cuttingProgress >= fryRecipeSo.cuttingProgressMax)
             {
                 KitchenObjectSO outputKitchenObjectSO = GetOutputForInput(GetKitchenObject().GetKitchenObjectSO());
                 GetKitchenObject().DestroySelf();
@@ -87,18 +83,18 @@ public class CuttingCounter : BaseCounter
 
     private bool HasRecipeWithInput(KitchenObjectSO inputKitchenObjectSO)
     {
-        CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(inputKitchenObjectSO);
+        FryRecipeSO fryRecipeSo = GetCuttingRecipeSOWithInput(inputKitchenObjectSO);
         
-        return cuttingRecipeSO != null;
+        return fryRecipeSo != null;
     }
 
     private KitchenObjectSO GetOutputForInput(KitchenObjectSO inputKitchenObjectSO)
     {
-        CuttingRecipeSO cuttingRecipeSO = GetCuttingRecipeSOWithInput(inputKitchenObjectSO);
+        FryRecipeSO fryRecipeSo = GetCuttingRecipeSOWithInput(inputKitchenObjectSO);
 
-        if (cuttingRecipeSO != null)
+        if (fryRecipeSo != null)
         {
-            return cuttingRecipeSO.output;
+            return fryRecipeSo.output;
         }
         else
         {
@@ -106,9 +102,9 @@ public class CuttingCounter : BaseCounter
         }
     }
 
-    private CuttingRecipeSO GetCuttingRecipeSOWithInput(KitchenObjectSO inputKitchenObjectSO)
+    private FryRecipeSO GetCuttingRecipeSOWithInput(KitchenObjectSO inputKitchenObjectSO)
     {
-        foreach (CuttingRecipeSO cuttingRecipeSO in cuttingRecipeSOArray)
+        foreach (FryRecipeSO cuttingRecipeSO in cuttingRecipeSOArray)
         {
             if (cuttingRecipeSO.input == inputKitchenObjectSO)
             {
