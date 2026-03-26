@@ -123,6 +123,7 @@ public class StoveCounter : BaseCounter, IHasProgress
                     player.GetKitchenObject().SetKitchenObjectParent(this);
                     
                     fryingRecipeSO = GetFryingRecipeSOWithInput(GetKitchenObject().GetKitchenObjectSO());
+                    Debug.Log(fryingRecipeSO);
                     
                     state = State.Frying;
                     fryingTimer = 0f;
@@ -149,6 +150,28 @@ public class StoveCounter : BaseCounter, IHasProgress
             if (player.HasKitchenObject())
             {
                 // Player is carrying something
+                if (player.GetKitchenObject().TryGetPlate(out PlateKitchenObject plateKitchenObject))
+                {
+                    // Player is holding a Plate
+                    // PlateKitchenObject plateKitchenObject = player.GetKitchenObject() as PlateKitchenObject;
+
+                    if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+                        
+                        state = State.Idle;
+                
+                        OnStateChanged?.Invoke(this, new OnStateChangedEventArgs
+                        {
+                            state = state
+                        });
+                
+                        OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+                        {
+                            progressNormalized = 0f
+                        });
+                    }
+                }
 			    
             }
             else
@@ -193,13 +216,16 @@ public class StoveCounter : BaseCounter, IHasProgress
 
     private FryingRecipeSO GetFryingRecipeSOWithInput(KitchenObjectSO inputKitchenObjectSO)
     {
+        Debug.Log(inputKitchenObjectSO);
         foreach (FryingRecipeSO fryingRecipeSO in fryingRecipeSOArray)
         {
             if (fryingRecipeSO.input == inputKitchenObjectSO)
             {
+                // Debug.Log("Successfully got recipe!");
                 return fryingRecipeSO;
             }
         }
+        Debug.Log("Failed to fetch recipe!");
         return null;
     }
     
