@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a28c42b1d234e4ea32849db3e33e12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectedCounterVisual
-  baseCounter: {fileID: 0}
+  baseCounter: {fileID: 4159263694672631845}
   visualGameObjectArray:
   - {fileID: 1657336413862396212}
   - {fileID: 7962752336360288970}

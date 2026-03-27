@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5892060177938555831, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+      propertyPath: baseCounter
+      value: 
+      objectReference: {fileID: 7344419856699015657}
     - target: {fileID: 6804228117240222678, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
       propertyPath: m_Name
       value: ContainerCounter_Tomato
@@ -61,3 +65,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+--- !u!114 &7344419856699015657 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3611057602293392724, guid: 3d857598b65d34a0389106f0d7e31f16, type: 3}
+  m_PrefabInstance: {fileID: 6337008000891692221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208b6cfd7c49144d2a33bfe6762f565c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContainerCounter
