@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="49113c3e-5a55-43ea-8883-da2bdb23dd61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Plate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/KitchenObjects/Plate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateKitchenObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlateKitchenObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +128,9 @@
       <workItem from="1774506472202" duration="363000" />
       <workItem from="1774582134139" duration="25000" />
       <workItem from="1774582261799" duration="831000" />
+      <workItem from="1775249537547" duration="5000" />
+      <workItem from="1775250756403" duration="5000" />
+      <workItem from="1775250770218" duration="2501000" />
     </task>
     <servers />
   </component>
