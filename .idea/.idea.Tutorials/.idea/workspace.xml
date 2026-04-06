@@ -7,14 +7,15 @@
     <list default="true" id="49113c3e-5a55-43ea-8883-da2bdb23dd61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/StoveCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/StoveCounter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/BaseCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/BaseCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/CuttingCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/CuttingCounter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/DeliveryCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/DeliveryCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateIconsSingleUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateIconsSingleUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateIconsUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlateIconsUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProgressBarUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProgressBarUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/TrashCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/TrashCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeliveryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeliveryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +135,8 @@
       <workItem from="1775250756403" duration="5000" />
       <workItem from="1775250770218" duration="2501000" />
       <workItem from="1775414573246" duration="5980000" />
+      <workItem from="1775494928657" duration="234000" />
+      <workItem from="1775496435292" duration="7990000" />
     </task>
     <servers />
   </component>
