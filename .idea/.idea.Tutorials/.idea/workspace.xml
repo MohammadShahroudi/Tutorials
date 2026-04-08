@@ -7,15 +7,17 @@
     <list default="true" id="49113c3e-5a55-43ea-8883-da2bdb23dd61" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tutorials/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CodeMonkeyFree/Editor/ScriptableObjects/CodeMonkeyFreeSO.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Counters/StoveCounter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Counters/StoveCounter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInputActions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/BaseCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/BaseCounter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/CuttingCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/CuttingCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/DeliveryCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/DeliveryCounter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Counters/TrashCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Counters/TrashCounter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DeliveryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DeliveryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/KitchenGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/KitchenGameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IKitchenObjectParent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Loader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/GamePlayingClockUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -137,6 +141,7 @@
       <workItem from="1775414573246" duration="5980000" />
       <workItem from="1775494928657" duration="234000" />
       <workItem from="1775496435292" duration="7990000" />
+      <workItem from="1775585576711" duration="11737000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,8 @@ public class KitchenGameManager : MonoBehaviour
     public static KitchenGameManager Instance { get; private set; }
     
     public event EventHandler OnStateChanged;
+    public event EventHandler OnGamePaused;
+    public event EventHandler OnGameUnpaused;
     
     
     private enum State
@@ -21,7 +23,9 @@ public class KitchenGameManager : MonoBehaviour
     private State state;
     private float waitingToStartTimer = 1f;
     private float countdownToStartTimer = 3f;
-    private float gamePlayingTimer = 10f;
+    private float gamePlayingTimer;
+    private float gamePlayingTimerMax = 10f;
+    private bool isGamePaused = false;
     
     
     
@@ -29,6 +33,16 @@ public class KitchenGameManager : MonoBehaviour
     {
         Instance = this;
         state = State.WaitingToStart;
+    }
+
+    private void Start()
+    {
+        GameInput.Instance.OnPauseAction += GameInput_OnPauseAction;
+    }
+
+    private void GameInput_OnPauseAction(object sender, EventArgs e)
+    {
+        TogglePauseGame();
     }
 
     private void Update()
@@ -48,6 +62,7 @@ public class KitchenGameManager : MonoBehaviour
                 if (countdownToStartTimer < 0f)
                 {
                     state = State.GamePlaying;
+                    gamePlayingTimer = gamePlayingTimerMax;
                     OnStateChanged?.Invoke(this, EventArgs.Empty);
                 }
                 break;
@@ -78,5 +93,33 @@ public class KitchenGameManager : MonoBehaviour
     public float GetCountdownToStartTimer()
     {
         return countdownToStartTimer;
+    }
+
+    public bool IsGameOver()
+    {
+        return state == State.GameOver;
+    }
+    
+    public float GetGamePlayingTimerNormalized()
+    {
+        return 1 - (gamePlayingTimer / gamePlayingTimerMax);
+    }
+
+    public void TogglePauseGame()
+    {
+        isGamePaused = !isGamePaused;
+
+        if (isGamePaused)
+        {
+            Time.timeScale = 0f;
+            
+            OnGamePaused?.Invoke(this, EventArgs.Empty);
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            
+            OnGameUnpaused?.Invoke(this, EventArgs.Empty);
+        }
     }
 }

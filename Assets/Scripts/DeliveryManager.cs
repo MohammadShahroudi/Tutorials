@@ -10,6 +10,7 @@ public class DeliveryManager : MonoBehaviour
     public event EventHandler OnRecipeCompleted;
     public event EventHandler OnRecipeSuccess;
     public event EventHandler OnRecipeFailed;
+    private int successfulRecipesAmount;
     
     
     public static DeliveryManager Instance { get; private set; }
@@ -86,6 +87,9 @@ public class DeliveryManager : MonoBehaviour
                 {
                     // Player delivered the correct recipe!
                     // Debug.Log("Player delivered the correct recipe!");
+                    
+                    successfulRecipesAmount++;
+                    
                     waitingRecipeSOList.RemoveAt(i);
                     
                     OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
@@ -104,5 +108,10 @@ public class DeliveryManager : MonoBehaviour
     public List<RecipeSO> GetWaitingRecipeSOList()
     {
         return waitingRecipeSOList;
+    }
+
+    public int GetSuccessfulRecipesAmount()
+    {
+        return successfulRecipesAmount;
     }
 }
